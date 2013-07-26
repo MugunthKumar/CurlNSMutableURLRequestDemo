@@ -17,6 +17,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+  NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://apple.com"]];
+  NSString *bodyString = @"Hello World";
+  NSData *data = [bodyString dataUsingEncoding:NSUTF8StringEncoding];
+  [request setHTTPBody:data];
+  request.HTTPMethod = @"POST";  
+  NSLog(@"%@", request);
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
