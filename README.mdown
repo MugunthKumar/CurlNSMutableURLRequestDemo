@@ -15,7 +15,7 @@ This code comes straight from MKNetworkKit and you don't need this category if y
 
 If you are using AFNetworking, I would recommend overriding the method,
 ```objc
-- (void)enqueueHTTPRequestOperationWithRequest:(NSURLRequest *)urlRequest 
+- (void)enqueueHTTPRequestOperationWithRequest:(NSURLRequest *)request 
                                        success:(void (^)(id object))success 
                                        failure:(void (^)(NSHTTPURLResponse *response, NSError *error))failure;
 ```
@@ -24,7 +24,7 @@ You can now NSLog the request and call the super class implementation.
 
 ## Example
 ```objc
-- (void)enqueueHTTPRequestOperationWithRequest:(NSURLRequest *)urlRequest 
+- (void)enqueueHTTPRequestOperationWithRequest:(NSURLRequest *)request 
                                        success:(void (^)(id object))success 
                                        failure:(void (^)(NSHTTPURLResponse *response, NSError *error))failure
 {
