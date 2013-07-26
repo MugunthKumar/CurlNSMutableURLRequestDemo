@@ -1,9 +1,11 @@
-# NSMutableURLRequest+CurlDescription
+# NSMutableURLRequest+MKCurlAdditions
 Category for NSMutableURLRequest to log curl command line prompts for debugging purposes
 
 ## Usage
-Drag the attached files into your project.
-* NSMutableURLRequest+MKCurlAdditions.h and NSMutableURLRequest+MKCurlAdditions.m
+Drag the directory MKCurlAdditions into your project. There should be two files in it.
+
+* NSMutableURLRequest+MKCurlAdditions.h
+* NSMutableURLRequest+MKCurlAdditions.m
 
 Add a line to your PCH file or any global header file to include this file.
 That’s it!. You are done.

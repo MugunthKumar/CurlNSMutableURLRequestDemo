@@ -18,7 +18,7 @@
 		ABFC63C017A233750034DDD2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABFC63BF17A233750034DDD2 /* Default-568h@2x.png */; };
 		ABFC63C317A233750034DDD2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABFC63C117A233750034DDD2 /* MainStoryboard.storyboard */; };
 		ABFC63C617A233750034DDD2 /* SCTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFC63C517A233750034DDD2 /* SCTViewController.m */; };
-		ABFC63CE17A233900034DDD2 /* NSMutableURLRequest+MKCurlAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFC63CD17A233900034DDD2 /* NSMutableURLRequest+MKCurlAdditions.m */; };
+		ABFC63D217A237C90034DDD2 /* NSMutableURLRequest+MKCurlAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFC63D117A237C90034DDD2 /* NSMutableURLRequest+MKCurlAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +38,8 @@
 		ABFC63C217A233750034DDD2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		ABFC63C417A233750034DDD2 /* SCTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCTViewController.h; sourceTree = "<group>"; };
 		ABFC63C517A233750034DDD2 /* SCTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCTViewController.m; sourceTree = "<group>"; };
-		ABFC63CC17A233900034DDD2 /* NSMutableURLRequest+MKCurlAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+MKCurlAdditions.h"; sourceTree = "<group>"; };
-		ABFC63CD17A233900034DDD2 /* NSMutableURLRequest+MKCurlAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+MKCurlAdditions.m"; sourceTree = "<group>"; };
+		ABFC63D017A237C90034DDD2 /* NSMutableURLRequest+MKCurlAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+MKCurlAdditions.h"; sourceTree = "<group>"; };
+		ABFC63D117A237C90034DDD2 /* NSMutableURLRequest+MKCurlAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+MKCurlAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +59,7 @@
 		ABFC639D17A233750034DDD2 = {
 			isa = PBXGroup;
 			children = (
+				ABFC63CF17A237C90034DDD2 /* MKCurlAdditions */,
 				ABFC63AF17A233750034DDD2 /* CurlNSMutableURLRequestDemo */,
 				ABFC63A817A233750034DDD2 /* Frameworks */,
 				ABFC63A717A233750034DDD2 /* Products */,
@@ -92,8 +93,6 @@
 				ABFC63C417A233750034DDD2 /* SCTViewController.h */,
 				ABFC63C517A233750034DDD2 /* SCTViewController.m */,
 				ABFC63B017A233750034DDD2 /* Supporting Files */,
-				ABFC63CC17A233900034DDD2 /* NSMutableURLRequest+MKCurlAdditions.h */,
-				ABFC63CD17A233900034DDD2 /* NSMutableURLRequest+MKCurlAdditions.m */,
 			);
 			path = CurlNSMutableURLRequestDemo;
 			sourceTree = "<group>";
@@ -110,6 +109,15 @@
 				ABFC63BF17A233750034DDD2 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABFC63CF17A237C90034DDD2 /* MKCurlAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				ABFC63D017A237C90034DDD2 /* NSMutableURLRequest+MKCurlAdditions.h */,
+				ABFC63D117A237C90034DDD2 /* NSMutableURLRequest+MKCurlAdditions.m */,
+			);
+			path = MKCurlAdditions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,7 +190,7 @@
 				ABFC63B617A233750034DDD2 /* main.m in Sources */,
 				ABFC63BA17A233750034DDD2 /* SCTAppDelegate.m in Sources */,
 				ABFC63C617A233750034DDD2 /* SCTViewController.m in Sources */,
-				ABFC63CE17A233900034DDD2 /* NSMutableURLRequest+MKCurlAdditions.m in Sources */,
+				ABFC63D217A237C90034DDD2 /* NSMutableURLRequest+MKCurlAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +313,7 @@
 				ABFC63CB17A233750034DDD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
